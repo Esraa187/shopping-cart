@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <script src="JS/auth.js"></script>
+    <!-- botstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+        <div class="container mt-0">
+            <a class="navbar-brand" href="#"><img src="products/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active p-lg-3 " aria-current="page" href="homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link p-lg-3" href="#">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link p-lg-3" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link p-lg-3" href="#">Shops</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown">
+                        <i class="fa-regular fa-user dropdown-toggle " data-bs-toggle="dropdown"
+                            aria-expanded="false"></i>
+                        <ul class=" dropdown-menu">
+                            <li><a class="dropdown-item" id="user-name" href="#"></a></li>
+                            <li><a class="dropdown-item" id="user-email" href="#"></a></li>
+                            <li><a class="dropdown-item" id="logout-btn" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <!-- <button type="button" class="btn px-4" id="logout-btn">LOGOUT</button> -->
+                    <a href="viewCart.html ">
+                        <i class="fa-solid fa-cart-shopping ps-3 nav-icon"></i>
+                    </a>
+                    <span id="items-count"></span>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid startup">
+        <p class="fs-4 m-0 fw-semibold">Trade-in-offer</p>
+        <h1>Super value deals</h1>
+        <h1 class="second">On all products</h1>
+        <p class="text-body-tertiary fw-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit Excepturi</p>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <!-- frist -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="1">
+                    <img src="products/f1.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Astrounts T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$10</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="2">
+                    <img src="products/f2.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Flower T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$25</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="3">
+                    <img src="products/f3.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cartoon T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$15</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="4">
+                    <img src="products/f4.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cardigan T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$20</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <!-- frist -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="5">
+                    <img src="products/n1.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Astrounts T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$10</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="6">
+                    <img src="products/n2.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Flower T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$25</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="7">
+                    <img src="products/n3.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cartoon T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$15</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="8">
+                    <img src="products/n5.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cardigan T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$20</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bg -->
+    <div class="container-fluid my-5 bg-2"></div>
+    <!-- trending -->
+    <div class="container my-5">
+        <div class="row">
+            <p>Shop by category</p>
+            <h1>Trending Items</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="position-relative over-content product" data-id="17">
+                    <i class="fa-solid fa-cart-shopping add-to-cart additional position-absolute top-0 end-0 mt-3 me-3"></i>
+                    <img src="products/product-1.jpg" alt="" class="w-100" id="Image1">
+                    <div class="position-absolute bottom-0 bg-light mb-4 py-2" style="width:95%; margin-left: 2.5%">
+                        <h4 class="m-0 ps-5">Top-Cup</h4>
+                        <p class="m-0 ps-5 ">50$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="position-relative over-content product" data-id="18">
+                    <i class="fa-solid fa-cart-shopping add-to-cart additional position-absolute top-0 end-0 mt-3 me-3"></i>
+                    <img src="products/look-5.jpg" alt="" class="w-100" id="Image2">
+                    <div class="position-absolute bottom-0 bg-light mb-4 py-2" style="width:95%; margin-left: 2.5%">
+                        <h4 class="m-0 ps-5">Suit</h4>
+                        <p class="m-0 ps-5 ">70$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="position-relative over-content product" data-id="19">
+                    <i class="fa-solid fa-cart-shopping add-to-cart additional position-absolute top-0 end-0 mt-3 me-3"></i>
+                    <img src="products/product-3.jpg" alt="" class="w-100" id="Image3">
+                    <div class="position-absolute bottom-0 bg-light mb-4 py-2" style="width:95%; margin-left: 2.5%">
+                        <h4 class="m-0 ps-5">Skirt</h4>
+                        <p class="m-0 ps-5 ">30$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- more -->
+    <div class="container my-5">
+        <div class="row">
+            <h1 class="text-center my-5">Discover More</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <img src="products/image-3.jpg" alt="" class="w-100">
+                    <div class="position-absolute top-50 bg-light p-5 ms-5">
+                        <h1 class="text-secondary fw-semibold">Bold & Modern</h1>
+                        <h1>Summer Looks</h1>
+                        <a href="" class="text-black fs-5 text-decoration border-bottom">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <img src="products/image-1.jpg" alt="" class="w-100">
+                    <div class="position-absolute top-50 bg-light p-5 ms-5">
+                        <h1 class="text-secondary fw-semibold">Feel the summer</h1>
+                        <h1>Tennis Look</h1>
+                        <a href="" class="text-black fs-5 text-decoration border-bottom">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- another -->
+    <div class="container">
+        <div class="row mt-5">
+            <!-- frist -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="9">
+                    <img src="products/look-1.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Astrounts T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$10</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="10">
+                    <img src="products/look-2.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Flower T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$25</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="11">
+                    <img src="products/f6.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cartoon T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$15</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="12">
+                    <img src="products/n8.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cardigan T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$20</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <!-- frist -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="13">
+                    <img src="products/f8.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Astrounts T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$10</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="14">
+                    <img src="products/f5.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Flower T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$25</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="15">
+                    <img src="products/n7.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cartoon T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$15</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product" data-id="16">
+                    <img src="products/n4.jpg" alt="" class="w-100 rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="pt-4">
+                            <p class="m-0 text-body-tertiary fw-medium">adidas</p>
+                            <h3>Cardigan T-shirt</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$20</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid  text-light mt-5">
+        <div class="row p-5">
+            <div class="col-lg-3 col-md-6">
+                <img src="products/logo.png" alt="" class="mb-4">
+                <p>VivaDecor your premier destination for luxury and modern interior design</p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f me-3"></i>
+                    <i class="fa-brands fa-twitter me-3"></i>
+                    <i class="fa-brands fa-instagram me-3"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-md-0 mt-sm-4">
+                <h5 class="fw-bold mb-4">About</h5>
+                <p>Interior design</p>
+                <p>Outdoor design</p>
+                <p>Lightning design</p>
+                <p>Office design</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-md-3 mt-sm-4 ">
+                <h5 class="fw-bold mb-4">Our Services</h5>
+                <p>Reviews</p>
+                <p>Careers</p>
+                <p>Pricing</p>
+                <p>Press inquires</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-md-3 mt-sm-3 ">
+                <h5 class="fw-bold mb-4">Our Services</h5>
+                <p>info@vivadecor.com</p>
+                <p>Design Avenue Cityville, CA 90210 United States</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/logout.js"></script>
+    <script src="JS/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

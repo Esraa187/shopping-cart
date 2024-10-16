@@ -1,0 +1,128 @@
+* {
+    font-family: "League Spartan", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --linear-grad: linear-gradient(to right, #141E30, #243B55);
+    --grad-clr1: #141E30;
+    --grad-clr2: #243B55;
+}
+
+.startup {
+    background-image: url("/products/hero4.png");
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.startup h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--grad-clr1);
+}
+
+.second {
+    color: var(--grad-clr2) !important;
+}
+
+.nav-icon {
+    color: var(--grad-clr2);
+    font-size: 23px;
+}
+
+#items-count {
+    color: var(--grad-clr2);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/*  */
+.logout-btn {
+    background-color: var(--grad-clr1);
+    color: #fff;
+}
+
+.logout-btn:hover {
+    background-color: var(--grad-clr2);
+    color: #fff;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 13px 4px #00000010;
+    transition: all .3s;
+}
+
+.product:hover {
+    transform: translateY(-15px);
+}
+
+.product .price {
+    color: var(--grad-clr2);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.stars {
+    color: rgb(227, 174, 3);
+}
+
+.add-to-cart {
+    cursor: pointer;
+    color: var(--grad-clr2);
+    font-size: 20px;
+}
+
+.add-to-cart:hover {
+    color: var(--grad-clr1);
+}
+
+/*  */
+.bg-2 {
+    background-image: url("/products/background-2.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center center;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+.product.over-content{
+    border: none;
+    box-shadow: 0 0 0 0;
+    padding: 0;
+}
+.product.over-content:hover{
+    transform: translateY(0);
+}
+.add-to-cart.additional{
+    display: none;
+    background-color: #eee ;  
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: .3s;
+}
+.over-content:hover .add-to-cart.additional{
+    display: block;
+}
+/*  */
+footer {
+    background: var(--grad-clr1);
+}
